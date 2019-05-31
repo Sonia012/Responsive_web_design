@@ -1,0 +1,56 @@
+body {
+  display: grid;
+}
+
+@media only screen and (max-width: 300px) {
+  body {
+    grid-template-columns: 100%;
+    grid-template-areas: "d";
+    font-size: 12px;
+  }
+  #small {
+    grid-area: d;
+  }
+  #medium {
+    grid-area: d;
+  }
+  #large {
+    grid-area: d;
+  }
+}
+
+@media only screen and (min-width: 301px) and (max-width: 767px) {
+  body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "s s m"
+                         "l l l";
+    font-size: 18px;
+  }
+  #small {
+    grid-area: s;
+  }
+  #medium {
+    grid-area: m;
+  }
+  #large {
+    grid-area: l;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "s m l";
+    font-size: 24px;
+  }
+  #small {
+    grid-area: s;
+  }
+  #medium {
+    grid-area: m;
+  }
+  #large {
+    grid-area: l;
+  }
+}

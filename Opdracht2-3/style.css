@@ -1,0 +1,26 @@
+@media only screen and (max-width: 300px) {
+  #medium, #large {
+    display:none;
+  }
+  #small {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 301px) and (max-width: 767px) {
+  #small, #large {
+    display: none;
+  }
+  #medium {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #small, #medium {
+    display: none;
+  }
+  #large {
+    font-size: 24px;
+  }
+}
